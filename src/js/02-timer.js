@@ -23,7 +23,7 @@ startButton.addEventListener('click', () => {
   const currentDate = new Date();
   const endDate = new Date(selectedDate);
   if (endDate < currentDate) {
-    window.alert('Please choose a date in the future');
+    Notiflix.Notify.warning('Please choose a date in the future');
     return;
   }
   
